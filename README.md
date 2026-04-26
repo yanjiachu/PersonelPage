@@ -1,17 +1,16 @@
-# Yan Jiachu (颜嘉chu)
+# Yan Jiachu
 
-## 教育背景
+## Education
 
-- **本科**: 北京理工大学 (BIT), 2021 - 2025
-- **硕士**: 中国科学院大学计算技术研究所 (UCAS.ICT), 2025 - 2028 (预计)
+- **M.S.** | Institute of Computing Technology, Chinese Academy of Sciences (UCAS.ICT) | 2025 - 2028 (Expected)
+- **B.E.** | Beijing Institute of Technology (BIT) | 2021 - 2025
 
-## 专业方向
+## Research Interests
 
-计算机科学与技术
+- Natural Language Processing (NLP)
+- Large Language Model (LLM) Data
+- Computer Science and Technology
 
-- 自然语言处理 (NLP)
-- 大模型数据 (Large Language Model Data)
+## About
 
-## 关于我
-
-欢迎来到我的个人主页！
+Personal academic homepage of Yan Jiachu.

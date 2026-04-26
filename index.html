@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yan Jiachu | 颜嘉楚</title>
+    <title>Yan Jiachu</title>
     <style>
         * {
             margin: 0;
@@ -12,172 +12,174 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
-            width: 100%;
-            overflow: hidden;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            font-size: 16px;
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 40px;
-            text-align: center;
+            margin-bottom: 40px;
         }
 
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+        .name {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
         }
 
-        .header .chinese-name {
-            font-size: 1.5em;
-            opacity: 0.9;
-            margin-bottom: 20px;
-        }
-
-        .header . affiliations {
+        .affiliation {
             font-size: 1.1em;
-            opacity: 0.85;
+            color: #666;
+            margin-bottom: 15px;
         }
 
-        .content {
-            padding: 40px;
+        .contact {
+            font-size: 0.95em;
+            color: #888;
+        }
+
+        .contact a {
+            color: #555;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .contact a:hover {
+            color: #000;
+            border-bottom-color: #000;
         }
 
         .section {
-            margin-bottom: 35px;
+            margin-bottom: 40px;
         }
 
-        .section h2 {
-            color: #667eea;
-            font-size: 1.4em;
+        .section-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #1a1a1a;
             margin-bottom: 15px;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 8px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 6px;
+            display: inline-block;
         }
 
         .section p {
-            font-size: 1.05em;
-            color: #555;
+            color: #444;
+            margin-bottom: 12px;
         }
 
         .education-item {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
-        .education-item h3 {
-            color: #333;
-            font-size: 1.15em;
-            margin-bottom: 5px;
+        .education-item .degree {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .education-item .institution {
+            color: #444;
         }
 
         .education-item .period {
             color: #888;
-            font-size: 0.95em;
+            font-size: 0.9em;
         }
 
         .education-item .expected {
             color: #e67e22;
-            font-size: 0.9em;
         }
 
-        .research-interests {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .research-interests ul {
+            list-style: none;
+            padding-left: 0;
         }
 
-        .tag {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-size: 0.95em;
+        .research-interests li {
+            color: #444;
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .research-interests li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333;
         }
 
         .footer {
-            background: #f8f9fa;
-            padding: 25px 40px;
-            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
             border-top: 1px solid #eee;
-        }
-
-        .footer p {
-            color: #888;
-            font-size: 0.9em;
+            font-size: 0.85em;
+            color: #999;
         }
 
         @media (max-width: 600px) {
-            .header {
+            body {
                 padding: 40px 20px;
             }
 
-            .header h1 {
+            .name {
                 font-size: 1.8em;
-            }
-
-            .content {
-                padding: 25px 20px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Yan Jiachu</h1>
-            <p class="chinese-name">颜嘉楚</p>
-            <p class="affiliations">计算机科学与技术</p>
+    <div class="header">
+        <h1 class="name">Yan Jiachu</h1>
+        <p class="affiliation">Institute of Computing Technology, Chinese Academy of Sciences (UCAS.ICT)</p>
+        <p class="contact">
+            Email: <a href="mailto:yanjiachu@example.com">yanjiachu@example.com</a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am currently a master's student at the Institute of Computing Technology, Chinese Academy of Sciences (UCAS.ICT).
+            Previously, I completed my undergraduate studies at Beijing Institute of Technology (BIT) from 2021 to 2025.
+        </p>
+        <p>
+            My research interests lie in Natural Language Processing (NLP) and Large Language Model (LLM) data.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <span class="degree">M.S. in Computer Science and Technology</span><br>
+            <span class="institution">Institute of Computing Technology, Chinese Academy of Sciences (UCAS.ICT)</span><br>
+            <span class="period">2025 - 2028 <span class="expected">(Expected)</span></span>
         </div>
-
-        <div class="content">
-            <div class="section">
-                <h2>教育背景</h2>
-                <div class="education-item">
-                    <h3>中国科学院大学计算技术研究所 (UCAS.ICT)</h3>
-                    <p class="period">2025 - 2028 <span class="expected">(预计)</span></p>
-                    <p>硕士</p>
-                </div>
-                <div class="education-item">
-                    <h3>北京理工大学 (BIT)</h3>
-                    <p class="period">2021 - 2025</p>
-                    <p>本科</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>研究方向</h2>
-                <div class="research-interests">
-                    <span class="tag">自然语言处理 (NLP)</span>
-                    <span class="tag">大模型数据 (LLM Data)</span>
-                    <span class="tag">计算机科学与技术</span>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>关于我</h2>
-                <p>欢迎来到我的个人主页！</p>
-            </div>
+        <div class="education-item">
+            <span class="degree">B.E. in Computer Science and Technology</span><br>
+            <span class="institution">Beijing Institute of Technology (BIT)</span><br>
+            <span class="period">2021 - 2025</span>
         </div>
+    </div>
 
-        <div class="footer">
-            <p>Powered by GitHub Pages</p>
+    <div class="section">
+        <h2 class="section-title">Research Interests</h2>
+        <div class="research-interests">
+            <ul>
+                <li>Natural Language Processing (NLP)</li>
+                <li>Large Language Model (LLM) Data</li>
+                <li>Computer Science and Technology</li>
+            </ul>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>Last updated: April 2026</p>
     </div>
 </body>
 </html>
