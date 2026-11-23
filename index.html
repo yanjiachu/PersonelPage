@@ -3,183 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yan Jiachu</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 40px;
-            font-size: 16px;
-        }
-
-        .header {
-            margin-bottom: 40px;
-        }
-
-        .name {
-            font-size: 2.2em;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 8px;
-        }
-
-        .affiliation {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .contact {
-            font-size: 0.95em;
-            color: #888;
-        }
-
-        .contact a {
-            color: #555;
-            text-decoration: none;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .contact a:hover {
-            color: #000;
-            border-bottom-color: #000;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section-title {
-            font-size: 1.2em;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 6px;
-            display: inline-block;
-        }
-
-        .section p {
-            color: #444;
-            margin-bottom: 12px;
-        }
-
-        .education-item {
-            margin-bottom: 18px;
-        }
-
-        .education-item .degree {
-            font-weight: 600;
-            color: #1a1a1a;
-        }
-
-        .education-item .institution {
-            color: #444;
-        }
-
-        .education-item .period {
-            color: #888;
-            font-size: 0.9em;
-        }
-
-        .education-item .expected {
-            color: #e67e22;
-        }
-
-        .research-interests ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .research-interests li {
-            color: #444;
-            margin-bottom: 6px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .research-interests li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #333;
-        }
-
-        .footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            font-size: 0.85em;
-            color: #999;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 40px 20px;
-            }
-
-            .name {
-                font-size: 1.8em;
-            }
-        }
-    </style>
+    <meta name="description" content="Jiachu Yan, master's student at ICT, CAS, working on data for large language models.">
+    <title>Jiachu Yan</title>
+    <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-    <div class="header">
-        <h1 class="name">Yan Jiachu</h1>
-        <p class="affiliation">Institute of Computing Technology, Chinese Academy of Sciences (UCAS.ICT)</p>
-        <p class="contact">
-            Email: <a href="mailto:yanjiachu@example.com">yanjiachu@example.com</a>
-        </p>
-    </div>
+    <div class="page">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="research.html">Research</a>
+        </nav>
 
-    <div class="section">
-        <h2 class="section-title">About Me</h2>
-        <p>
-            I am currently a master's student at the Institute of Computing Technology, Chinese Academy of Sciences (UCAS.ICT).
-            Previously, I completed my undergraduate studies at Beijing Institute of Technology (BIT) from 2021 to 2025.
-        </p>
-        <p>
-            My research interests lie in Natural Language Processing (NLP) and Large Language Model (LLM) data.
-        </p>
-    </div>
+        <main>
+            <header class="intro">
+                <h1>Jiachu Yan</h1>
+                <p class="affiliation">
+                    M.S. Student · <a href="https://english.ucas.edu.cn/">UCAS</a> ·
+                    <a href="https://www.ict.ac.cn/">Institute of Computing Technology, CAS</a>
+                </p>
+                <p class="research-summary">My current research focuses on data for large language models (LLMs).</p>
+                <p class="contact">
+                    <a href="mailto:yanjiachu@outlook.com">yanjiachu@outlook.com</a>
+                    <a href="https://github.com/yanjiachu">GitHub</a>
+                </p>
+            </header>
 
-    <div class="section">
-        <h2 class="section-title">Education</h2>
-        <div class="education-item">
-            <span class="degree">M.S. in Computer Science and Technology</span><br>
-            <span class="institution">Institute of Computing Technology, Chinese Academy of Sciences (UCAS.ICT)</span><br>
-            <span class="period">2025 - 2028 <span class="expected">(Expected)</span></span>
-        </div>
-        <div class="education-item">
-            <span class="degree">B.E. in Computer Science and Technology</span><br>
-            <span class="institution">Beijing Institute of Technology (BIT)</span><br>
-            <span class="period">2021 - 2025</span>
-        </div>
-    </div>
+            <section class="content-section" aria-labelledby="education-title">
+                <h2 id="education-title">Education</h2>
+                <ul class="education-list" role="list">
+                    <li class="education-item">
+                        <div>
+                            <h3 class="institution-links">
+                                <a href="https://english.ucas.edu.cn/">University of Chinese Academy of Sciences</a>
+                                <a href="https://www.ict.ac.cn/">ICT, CAS</a>
+                            </h3>
+                            <p class="degree">Computer Science and Technology · M.S.</p>
+                        </div>
+                        <p class="period"><time datetime="2025">2025</time>–<time datetime="2028">2028</time> (expected)</p>
+                    </li>
+                    <li class="education-item">
+                        <div>
+                            <h3><a href="https://english.bit.edu.cn/">Beijing Institute of Technology</a></h3>
+                            <p class="degree">Computer Science and Technology · B.E.</p>
+                        </div>
+                        <p class="period"><time datetime="2021">2021</time>–<time datetime="2025">2025</time></p>
+                    </li>
+                </ul>
+            </section>
+        </main>
 
-    <div class="section">
-        <h2 class="section-title">Research Interests</h2>
-        <div class="research-interests">
-            <ul>
-                <li>Natural Language Processing (NLP)</li>
-                <li>Large Language Model (LLM) Data</li>
-                <li>Computer Science and Technology</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>Last updated: April 2026</p>
+        <footer>Last updated <time datetime="2026-11">November 2026</time></footer>
     </div>
 </body>
 </html>

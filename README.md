@@ -7,9 +7,7 @@
 
 ## Research Interests
 
-- Natural Language Processing (NLP)
-- Large Language Model (LLM) Data
-- Computer Science and Technology
+- Data for Large Language Models (LLMs)
 
 ## About
 
